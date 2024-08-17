@@ -16,3 +16,4 @@ enum class CategoryType(val text: String, val color: Color) {
     CUSTOMER_SUPPORT("Customer Support", Color(0xFF1B555F)),
     LEGAL("Legal", Color(0xFFE276E1))
 }
+

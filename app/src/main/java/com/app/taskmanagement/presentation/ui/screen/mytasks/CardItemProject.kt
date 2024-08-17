@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -36,7 +37,9 @@ import com.app.taskmanagement.domain.model.Project
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+
 @Composable
+
 fun CardItemProject(
     project: Project,
     onClickEdit: () -> Unit,

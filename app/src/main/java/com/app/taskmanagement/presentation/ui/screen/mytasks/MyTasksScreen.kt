@@ -40,6 +40,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -72,7 +73,7 @@ fun MyTaskScreen(
         contentWindowInsets = WindowInsets(0.dp),
         topBar = {
             TopAppBar(
-                title = { Text(text = "Good Morning") }
+                title = { Text(text = "Hi master") }
             )
         },
         floatingActionButton = {
@@ -307,4 +308,12 @@ private fun ColumnScope.Content(
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMyTaskScreen() {
+    MyTaskScreen(
+        onProjectClick = { /* Do nothing for preview */ }
+    )
 }

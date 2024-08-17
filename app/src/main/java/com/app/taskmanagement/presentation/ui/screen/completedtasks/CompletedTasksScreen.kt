@@ -22,6 +22,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -65,6 +66,7 @@ fun CompletedTasksScreen(
         }
     }
 }
+
 
 @Composable
 private fun Content(
@@ -123,4 +125,15 @@ private fun Content(
             )
         }
     }
+}
+@Preview(
+    showSystemUi = true,
+    showBackground = true,
+    device = "spec:width=411dp,height=891dp,dpi=420"
+)
+@Composable
+fun PreviewCompletedTasksScreen() {
+    CompletedTasksScreen(
+        onProjectClick = {}
+    )
 }
